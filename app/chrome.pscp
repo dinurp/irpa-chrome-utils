@@ -1,0 +1,139 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ConteXtorStudio Version="StudioReco V1.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" noNamespaceSchemaLocation="XsdStudio.xsd">
+	<PROCESSUS>
+		<PROCESS Name="GLOBAL" Key="NoKey" Comment="Global Processus">
+			<_DECLAREVAR>
+				<STRUCTUREDON Name="GLOBAL" />
+			</_DECLAREVAR>
+			<SCRIPTS />
+			<RESOURCES />
+		</PROCESS>
+	</PROCESSUS>
+	<APPLICATIONS>
+		<APPLI Name="chrome" CtxtId="c2c8b476-5819-4e19-b136-1011f51c3b28" Nature="UIAUTOMATION" TechnoSDK="V3" Sync="0" PendingDelay="0">
+			<CAPTURE Name="APPLI_OnbeforeunloadDemo_1" CtxtId="2" Techno="UIAutomation" />
+			<CRITERE>
+				<EXE Scan="Full"><![CDATA[CHROME.EXE]]></EXE>
+			</CRITERE>
+			<_DECLAREVAR>
+				<STRUCTUREDON Name="chrome" />
+			</_DECLAREVAR>
+			<_ECRANS>
+				<PAGE Name="mainChromeWindow" Comment="Pane - New Tab - Google Chrome" CtxtId="981b4c00-1a1a-4359-9110-fff4cb726a04" SubpagesType="Multiple" RefreshMode="Polling">
+					<CRITERE>
+						<Deepness Scan="LTOE"><![CDATA[0]]></Deepness>
+					</CRITERE>
+					<TRACK_EVENTS>
+						<TRACK_EVENT Name="REFRESH(POLLING)" />
+					</TRACK_EVENTS>
+					<OBJETS />
+					<CAPTURE Name="PAGE_PaneNewTabGoog_2122331_1" Comment="Pane - New Tab - Google Chrome" CtxtId="90" Techno="UIAutomation" CapturedPos="90.R0" Timestamp="29/05/2020 21:24:32" MaskRectangle="0|0|1721|934" />
+					<CAPTURE Name="PAGE_PaneOnbeforeunload_1546483_1" Comment="Pane - New Tab - Google Chrome" CtxtId="101" Techno="UIAutomation" CapturedPos="101.R0" Timestamp="07/06/2020 15:47:03" />
+					<_ECRANS>
+						<PAGE Name="dlgChromeLeaveSite" Comment="Pane - New Tab - Google Chrome" CtxtId="5149858e-193c-4575-961f-df97992ffb14" SubpagesType="Multiple" RefreshMode="Polling" Technical="Y">
+							<CRITERE>
+								<ControlType Scan="Full"><![CDATA[Pane]]></ControlType>
+								<Deepness Scan="LTOE"><![CDATA[1]]></Deepness>
+								<Name Scan="Full"><![CDATA[Leave site?]]></Name>
+							</CRITERE>
+							<TRACK_EVENTS>
+								<TRACK_EVENT Name="REFRESH(POLLING)" />
+							</TRACK_EVENTS>
+							<OBJETS />
+							<CAPTURE Name="PAGE_PaneNewTabGoog_2122331_1" Comment="Pane - New Tab - Google Chrome" CtxtId="91" Techno="UIAutomation" CapturedPos="91.R0R0" Timestamp="29/05/2020 22:06:10" MaskRectangle="629|68|462|144" />
+							<_ECRANS>
+								<PAGE Name="pChromerLeaveSite" Comment="Pane - New Tab - Google Chrome" CtxtId="ae493e44-bacb-4a5e-aa90-2c28f295829d" SubpagesType="Multiple" RefreshMode="Polling">
+									<CRITERE>
+										<ControlType Scan="Full"><![CDATA[Pane]]></ControlType>
+										<Deepness Scan="LTOE"><![CDATA[1]]></Deepness>
+										<Range Scan="Full"><![CDATA[R1]]></Range>
+									</CRITERE>
+									<TRACK_EVENTS>
+										<TRACK_EVENT Name="REFRESH(POLLING)" />
+									</TRACK_EVENTS>
+									<OBJETS>
+										<OBJET Name="stMainInstruction" CtxtId="2d04720b-2b84-45db-8efc-36082ac095cb">
+											<CRITERE>
+												<TAG Name="Text" Scope="All" CapturedPos="96.R0R0R1R1R0R0R0R0R0">
+													<ATT Name="Name">
+														<VALUE Scan="Full"><![CDATA[Changes you made may not be saved.]]></VALUE>
+													</ATT>
+												</TAG>
+											</CRITERE>
+										</OBJET>
+										<OBJET Name="btLeave" CtxtId="5d25981c-77a2-4ad6-a3b3-53a01312f0b4" MustExist="Y" SpecIndex="1">
+											<CRITERE>
+												<TAG Name="Button" Scope="All" CapturedPos="96.R0R0R1R1R1R0">
+													<ATT Name="Name">
+														<VALUE Scan="Full"><![CDATA[Leave]]></VALUE>
+													</ATT>
+												</TAG>
+											</CRITERE>
+										</OBJET>
+										<OBJET Name="btCancel" CtxtId="fdec3ccd-d8d0-433c-9786-f27b117f28d1" MustExist="Y">
+											<CRITERE>
+												<TAG Name="Button" Scope="All" CapturedPos="96.R0R0R1R1R1R1">
+													<ATT Name="Name">
+														<VALUE Scan="Full"><![CDATA[Cancel]]></VALUE>
+													</ATT>
+												</TAG>
+											</CRITERE>
+										</OBJET>
+									</OBJETS>
+									<CAPTURE Name="PAGE_PaneNewTabGoog_2122331_1" Comment="Pane - New Tab - Google Chrome" CtxtId="96" Techno="UIAutomation" CapturedPos="96.R0R0R1" Timestamp="29/05/2020 22:25:19" MaskRectangle="629|67|462|145" />
+								</PAGE>
+							</_ECRANS>
+						</PAGE>
+						<PAGE Name="pControlPane" Comment="Pane - about:blank - Google Chrome" CtxtId="08eea41e-9941-4a35-8cd5-f54eb4d3c60d" SubpagesType="Multiple" RefreshMode="Polling">
+							<CRITERE>
+								<Deepness Scan="LTOE"><![CDATA[1]]></Deepness>
+							</CRITERE>
+							<TRACK_EVENTS>
+								<TRACK_EVENT Name="REFRESH(POLLING)" />
+							</TRACK_EVENTS>
+							<OBJETS>
+								<OBJET Name="btClose" CtxtId="db36e27d-dc2e-424e-8c20-b806b2bf2fd9" MustExist="Y">
+									<CRITERE>
+										<TAG Name="Button" Scope="All" CapturedPos="109.R0R2R3">
+											<ATT Name="Name">
+												<VALUE Scan="Full"><![CDATA[Close]]></VALUE>
+											</ATT>
+										</TAG>
+									</CRITERE>
+								</OBJET>
+								<OBJET Name="btMinimize" CtxtId="ecddb16f-40f8-4757-ae3e-872bb005a767">
+									<CRITERE>
+										<TAG Name="Button" Scope="All" CapturedPos="109.R0R2R1">
+											<ATT Name="Name">
+												<VALUE Scan="Full"><![CDATA[Minimize]]></VALUE>
+											</ATT>
+										</TAG>
+									</CRITERE>
+								</OBJET>
+								<OBJET Name="btRestore" CtxtId="6f48bfe4-ccd0-4d8e-a644-6f75bedb53e5">
+									<CRITERE>
+										<TAG Name="Button" Scope="All" CapturedPos="109.R0R2R2">
+											<ATT Name="Name">
+												<VALUE Scan="Full"><![CDATA[Restore]]></VALUE>
+											</ATT>
+										</TAG>
+									</CRITERE>
+								</OBJET>
+							</OBJETS>
+							<CAPTURE Name="PAGE_PaneAboutBlank_2016393_1" Comment="Pane - about:blank - Google Chrome" CtxtId="109" Techno="UIAutomation" CapturedPos="109.R0R2" Timestamp="07/06/2020 20:49:02" MaskRectangle="7|7|1706|22" />
+						</PAGE>
+					</_ECRANS>
+				</PAGE>
+			</_ECRANS>
+			<SCRIPTS />
+			<ACTIONS />
+			<EVENTS />
+			<SCENARII>
+				<Steps />
+			</SCENARII>
+			<WORKFLOWS>
+				<WORKFLOW Name="closePage" Src="%workflows%\closePage.xaml" CtxtId="8ab33be9-380c-4a3e-9c50-219d38936e6c" DisplayName="closePage" StepTimeout="30" ScenarioTimeout="600" GeneratedScenarioName="closePage" />
+			</WORKFLOWS>
+		</APPLI>
+	</APPLICATIONS>
+</ConteXtorStudio>

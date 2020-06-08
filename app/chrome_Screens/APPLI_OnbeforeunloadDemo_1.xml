@@ -1,0 +1,6 @@
+﻿<APPLI Techno="UIAutomation" Name="APPLI_OnbeforeunloadDemo_1" ParamName="onbeforeunload Demo - Google Chrome">
+	<PROPERTIES>
+		<EXE>CHROME.EXE</EXE>
+		<TITLE>onbeforeunload Demo - Google Chrome</TITLE>
+	</PROPERTIES>
+</APPLI>
